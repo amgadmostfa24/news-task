@@ -1,0 +1,20 @@
+{{>header}}
+<div class="container">
+    <div class="row" style="padding: 0px;">
+
+        <div class="col-12">
+            {{#each data.articles}}
+            <div class="card" style=" box-shadow:2px 2px 12px 3px rgb(166, 166, 180);margin-top:10px;">
+                <img class="card-img-top img-fluid" src="{{urlToImage}}" alt="soraa">
+                <div class="card-body text-right" style="text-align: end;">
+                    <h5 class="card-title">{{title}}</h5>
+                    <p class="card-text">{{description}}</p>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+
+
+    </div>
+</div>
+{{>footer}}
